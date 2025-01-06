@@ -21,7 +21,7 @@ To compile and run a specific example, follow these steps:
 2. **Use Cargo Command**: Execute the following command in your terminal:
 
 ```sh
-cargo run --manifest-path examples/{example_dir}/Cargo.toml
+cargo run --manifest-path projects/{example_dir}/Cargo.toml
 ```
 
 ## Example
@@ -29,8 +29,15 @@ cargo run --manifest-path examples/{example_dir}/Cargo.toml
 For instance, if you want to run an example located in the `ratatui_example` directory, you would use:
 
 ```sh
-cargo run --manifest-path examples/ratatui_test/Cargo.toml
+cargo run --manifest-path projects/ratatui_test/Cargo.toml
 ```
+
+If the following error is thrown:
+```sh
+error: a bin target must be available for `cargo run`
+```
+
+The project may be a library (`lib.rs`), if there are tests in the project, they can be run with `cargo test` instead of `cargo run`.
 
 > [!NOTE]  
 > Additional information and instructions can be found in each example's `src/main.rs` or each `README.md` file.
