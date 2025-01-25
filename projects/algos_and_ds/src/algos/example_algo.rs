@@ -33,7 +33,6 @@ impl Algo<Input, Output> for ExampleAlgo {
         self.input = input;
         self.implementation();
 
-        println!("{self:#?}");
         self.output
     }
 

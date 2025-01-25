@@ -35,7 +35,7 @@ fn main() {
     let v_t = svd.v_t.unwrap();
 
     let mut s_mat = DMatrix::<f64>::zeros(s.len(), s.len());
-    let s_vector = DVector::from_row_slice(&s.as_slice());
+    let s_vector = DVector::from_row_slice(s.as_slice());
     s_mat.set_diagonal(&s_vector);
 
     let mut compressed = DMatrix::<f64>::zeros(u.nrows(), v_t.ncols());

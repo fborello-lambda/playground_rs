@@ -4,3 +4,4 @@ pub trait Algo<I, O> {
 }
 
 pub mod example_algo;
+pub mod rpn_interpreter;
