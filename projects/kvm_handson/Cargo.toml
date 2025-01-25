@@ -1,0 +1,9 @@
+[package]
+name = "kvm_handson"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+kvm-bindings = "0.11.0"
+kvm-ioctls = "0.20.0"
+libc = "0.2.110"
